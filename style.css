@@ -1,0 +1,280 @@
+@font-face { font-family: Montserat; src: url('./fonts/Montserrat-Bold.ttf'); } 
+@font-face { font-family: Josefin Sans Light; src: url('./fonts/JosefinSans-Light.ttf'); } 
+@font-face { font-family: Josefin Sans-Bold; src: url('./fonts/JosefinSans-Bold.ttf'); }
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: #2F243A;
+
+    
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #EDEDED;
+    text-transform: uppercase;
+    margin: 0 0;   
+   
+}
+
+h2, button{
+    font-family: 'Josefin Sans-Bold';
+    font-weight: bolder;
+}
+
+
+p{
+    font-family: 'Josefin Sans Light';
+
+}
+
+.header-text{
+    position: relative;
+    display: inline-block;
+    margin: 230px 0px 0px 150px;
+    overflow: wrap
+}
+
+
+.games-header-title, .games-header-subtitle, .games-header-snippet {
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+/* HEADER */
+#HeaderMain {
+    background-color: #2F243A;
+    height: 4000px;
+    width: 80px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.site-logo{
+    height: 118px;
+    width: 76px;
+    background-color: black;
+    border: 2px solid #FAC9B8;
+    margin-top: 1px;
+}
+
+.header-main-nav{
+    position: sticky;
+}
+
+.header-main-nav-links {
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    margin-top: 80px;
+
+}
+
+.header-main-social-links {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.header-main-nav-link, .header-main-social-links {
+    margin-bottom: 40px;
+}
+
+.fa-github {
+    margin-bottom: 20px;
+}
+
+.switch-pages {
+    width: 40px;
+    height: 110px;
+    color: black;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    margin-top: 30px;
+    left: 20px;
+    z-index: 1;
+}
+
+.fa-arrow-up {
+    margin-bottom: 400px;
+}
+
+.fa-arrow-up, .fa-arrow-down {
+    color: #444054;
+    transition: all 0.5s ease-in-out;
+    font-size: 40px;
+    
+}
+
+
+.fa-arrow-up:hover {
+    color: #FAC9B8;
+}
+
+.fa-arrow-down:hover {
+    color: #FAC9B8;
+}
+
+
+
+/* MAIN SECTION */
+
+#Home {
+    display: inline-block;
+    /* background-color: #444054; */
+    width: 100%;
+    height: 630px;
+    background-color: rgb(67, 52, 82);
+    
+}
+
+#Games, #Artwork, #Contact {
+    max-width: 100%;
+    height: 610px;
+    padding: 30px 30px 30px 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.games-header-text {
+    position: relative;
+}
+
+.game-content-tile {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.content-wrapper {
+    /* background-color: rgb(250, 235, 229); */
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    margin: 20px 20px 20px 0px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;  
+}
+
+.content-wrapper:hover {
+    /* adding a box shadow to add a glow of purple when on hover */
+    box-shadow: 0 5px 15px rgb(240, 200, 69, 1); 
+}
+
+.space-pong, .shoot-em-all, .circus-of-values, .fabian-and-lula, .im-innocent, .those-who-came-after, .aventura-game {
+    height: 150px;
+    width: 150px;
+    
+}
+
+.space-pong-title, .shoot-em-all-title, .circus-of-values-title, .fabian-and-lula-title, .im-innocent-title, .those-who-came-after-title, .aventura-title {
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+#Games {
+    background-color: #444054;
+    /* margin-top: 30px; */
+    margin-left: 60px;
+    /* margin-right: -100px; */
+ 
+}
+
+#Artwork {
+    background-color: #FAC9B8;
+    margin-top: 20px;
+    margin-left: -35px;
+    margin-right: -100px;
+}
+
+
+#Contact {
+    background-color: #EDEDED;
+    margin-left: -35px;
+    margin-right: -100px;
+    margin-top: -50px;
+   
+}
+
+
+/* BODY */
+.home-background-image {
+   
+    position: absolute;
+}
+
+.home-image {
+    width: 98vw;
+    height: 630px;
+   
+    
+}
+
+.continue-to-next-section {
+    font-size: 17px;
+    display: block;
+    margin: 30px 0px 0px 151px;
+    border-radius: 3px;
+    /* adding a transition to make the glow animation more seamless */
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    
+}
+
+.continue-to-next-section:hover {
+    /* changing the color of the button text on hover */
+    color: rgb(240, 200, 69, 1);
+    /* adding a box shadow to add a glow of purple when on hover */
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4); 
+}
+
+/* ICONS */
+.fa-home, .fa-gamepad, .fa-palette, .fa-envelope, .fa-github, .fa-linkedin-in {
+    color: #444054;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-home:hover {
+    color: #FAC9B8;
+    
+    
+}
+
+.fa-gamepad:hover {
+    color: #FAC9B8;
+}
+
+.fa-palette:hover {
+    color: #FAC9B8;
+}
+
+.fa-envelope:hover {
+    color: #FAC9B8;
+}
+
+.fa-github:hover {
+    color: #FAC9B8;
+}
+
+.fa-linkedin-in:hover {
+    color: #FAC9B8;
+}
+
+
+
